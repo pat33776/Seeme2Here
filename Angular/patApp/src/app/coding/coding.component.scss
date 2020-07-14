@@ -1,0 +1,91 @@
+
+$hackerNewfont: #228855;
+
+.tab-pane {
+    padding-top: 1.5em;
+}
+
+ul.brews {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    background: rgb(238, 238, 238);
+    padding: 1em;
+    margin-right: 10px;
+    width: 20%;
+    height: 200px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+    }
+
+    p.name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    p.country {
+      text-transform: uppercase;
+      font-size: .9rem;
+      flex-grow: 1;
+    }
+  }
+}
+
+ul.hackerNews {
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    font-size: 23px;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0px 5px 0px;
+
+    a {
+      color: $hackerNewfont !important;
+
+      &:hover {
+        color: darken($hackerNewfont, 50%);
+      }
+    }
+  }
+}
+
+span {
+  font-weight: bold;
+  background: lightgray;
+  padding: .3em .8em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.play-container {
+  padding: 3em;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+
+  input {
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+}
+.normal {
+  background-color: yellow;
+  border: 4px solid black;
+}
+
+.notNormal {
+  background-color: lightgray;
+}
+
+
+
+
+
