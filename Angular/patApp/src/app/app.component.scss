@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$navbarcolor: #285;
+$textnavbarcolor: white;
+
+body {
+    margin: 0;
+    font-family:'Nunito', sans-serif;
+    font-size: 18px;
+}
+nav {
+  background: $navbarcolor !important;
+
+  .navbar-brand {
+    color: $textnavbarcolor !important;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(23, 26, 24);
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(23, 26, 24, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  ul {
+    li a {
+      color: $textnavbarcolor !important;
+    }
+
+    .dropdown-menu {
+      background: $navbarcolor !important;
+
+      .dropdown-item:hover {
+        background: darken($navbarcolor, 5%) !important;
+      }
+    }
+  }
+
+  .row {
+    margin-right: 15px !important;
+  }
+}
+
+
+.title {
+  font-size: x-large;
+}
+
+
