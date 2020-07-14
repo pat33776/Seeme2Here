@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AngAPI.Models
+namespace Api.Models
 {
     public class Story
     {
