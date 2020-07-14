@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AngAPI.Interfaces;
-using AngAPI.Models;
+using Api.Interfaces;
+using Api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngAPI.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
