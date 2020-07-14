@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="patApp\src\app\data.service.spec.ts" />
+    <None Remove="patApp\src\app\data.service.ts" />
+    <None Remove="patApp\src\app\_helpers\auth.guard.ts" />
+    <None Remove="patApp\src\app\_helpers\basic-auth.interceptor.ts" />
+    <None Remove="patApp\src\app\_helpers\error.interceptor.ts" />
+    <None Remove="patApp\src\app\_helpers\fake-backend.ts" />
+    <None Remove="patApp\src\app\_helpers\replace-time.pipe.ts" />
+    <None Remove="patApp\src\app\_models\story.ts" />
+    <None Remove="patApp\src\app\_models\user.ts" />
+    <None Remove="patApp\src\app\_services\authentication.service.ts" />
+    <None Remove="patApp\src\app\_services\user.service.ts" />
+    <None Remove="patApp\src\proxy.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="patApp\src\proxy.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="patApp\src\app\_models\story.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_services\data.service.spec.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_services\data.service.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_helpers\auth.guard.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_helpers\basic-auth.interceptor.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_helpers\error.interceptor.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_helpers\fake-backend.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_helpers\replace-time.pipe.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_models\user.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_services\authentication.service.ts" />
+    <TypeScriptCompile Include="patApp\src\app\_services\user.service.ts" />
+  </ItemGroup>
+
+</Project>
