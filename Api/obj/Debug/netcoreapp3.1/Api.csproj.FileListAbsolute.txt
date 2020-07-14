@@ -1,0 +1,5 @@
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
