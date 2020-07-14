@@ -1,8 +1,8 @@
-using AngAPI.Models;
+using Api.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AngAPI.Interfaces
+namespace Api.Interfaces
 {
     public interface IHackerNews
     {
