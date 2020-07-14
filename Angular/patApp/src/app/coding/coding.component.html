@@ -1,0 +1,131 @@
+<!-- Nav tabs -->
+  <div style="padding-top: 2em;">
+    <h1>Angular 8</h1>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="hackerapi-tab" data-toggle="tab" href="#hackerapi" role="tab" aria-controls="hackerapi" aria-selected="true">Hacker News API</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="breweries-tab" data-toggle="tab" href="#breweries" role="tab" aria-controls="breweries" aria-selected="false">Breweries</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="crashcourse-tab" data-toggle="tab" href="#crashcourse" role="tab" aria-controls="crashcourse" aria-selected="false">Crash Course</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" id="weathers-tab" data-toggle="tab" href="#weathers" role="tab" aria-controls="weathers" aria-selected="false">Weathers</a>
+      </li>-->
+      <li class="nav-item">
+         <a class="nav-link" id="jobnews-tab" data-toggle="tab" href="#jobnews" role="tab" aria-controls="jobnews" aria-selected="false">Jobs</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!--Tab #1 Hacker New API-->
+      <div class="tab-pane active" id="hackerapi" role="tabpanel" aria-labelledby="hackerapi-tab">
+        <div class="row row justify-content-between">
+          <h2 style="text-align: center;">Top {{ newsCount }} Hacker News</h2>
+          <div class="row search">
+            <input class="form-control" type="search" [(ngModel)]="searchStr" placeholder="Search By Title" aria-label="Search" (ngModelChange)="updateSearchStr($event)">
+          </div>
+        </div>
+        <ul class="hackerNews">
+          <li *ngFor="let article of _articlesLocal | filter: searchStr">
+            <ng-template [ngIf]="article.url" [ngIfElse]="none">
+              <div>
+                <a class="article-link" [href]=article.url target="_blank">{{ article.title }}</a> By {{ article.by | uppercase }} {{ article.time | replaceTime : article.time  }}
+              </div>
+            </ng-template>
+            <ng-template #none>
+              <div>
+                {{ article.title }} By {{ article.by | uppercase }}
+                {{ article.time | replaceTime : article.time  }}
+                <!--{{ article.time | date  }} gave me Jan 19, 1970 !!!-->
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      </div>
+      <!--Tab #2 Breweries-->
+      <div class="tab-pane" id="breweries" role="tabpanel" aria-labelledby="breweries-tab">
+        <ul class="brews" *ngIf="brews">
+          <li *ngFor="let brew of brews">
+            <p class="name">{{ brew.name }}</p>
+            <p class="country">{{ brew.country }}</p>
+            <a href="{{ brew.website_url }}" target="_blank" class="site">site</a>
+          </li>
+        </ul>
+      </div>
+      <!--Tab #3 Angular Crash Course-->
+      <div class="tab-pane" id="crashcourse" role="tabpanel" aria-labelledby="crashcourse-tab">
+        <div class="play-container">
+          <p>You've clicked <span (click)="counterClick()">this</span>{{ clickCounter }} times</p>
+        </div>
+        <div class="play-container">
+          <input type="text" [(ngModel)]="name" />
+          <br />
+          <strong>You said: </strong> {{ name }}
+        </div>
+
+        <div class="play-container" [ngClass]="setClasses()">
+          <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+            <p>The click counter <strong>IS greater</strong> than 4</p>
+          </ng-template>
+          <ng-template #none>
+            <p>The click counter <strong>IS NOT greater</strong> than 4</p>
+          </ng-template>
+        </div>
+      </div>
+      <!--<div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings</div>-->
+      <!--Tab #4 weather forecast-->
+      <!--<div id="weathers" class="tab-pane" role="tabpanel" aria-labelledby="weathers-tab">
+        <p>This component demonstrates fetching data from the server.</p>
+        <p *ngIf="!forecasts"><em>Loading...</em></p>
+        <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Temp. (C)</th>
+              <th>Temp. (F)</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let forecast of forecasts">
+              <td>{{ forecast.date }}</td>
+              <td>{{ forecast.temperatureC }}</td>
+              <td>{{ forecast.temperatureF }}</td>
+              <td>{{ forecast.summary }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>-->
+      <!--Tab #5 job news-->
+      <div id="jobnews" class="tab-pane" role="tabpanel" aria-labelledby="jobnews-tab">
+        <p>This component demonstrates fetching data from the server.</p>
+        <p *ngIf="!jobs"><em>Loading...</em></p>
+        <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="jobs">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let job of jobs">
+              <ng-template [ngIf]="job.url" [ngIfElse]="none">
+                <td><a [href]="job.url" target="_blank">{{ job.title }}</a></td>
+                <td>{{ job.by }}</td>               
+              </ng-template>
+              <ng-template #none>
+                <td>{{ job.title }}</td>
+                <td>{{ job.by }}</td>
+              </ng-template>
+             
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
