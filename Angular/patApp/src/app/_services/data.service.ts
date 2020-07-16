@@ -15,7 +15,6 @@ export class DataService {
  
   topStoryUrl: string = environment.backend.topStoryBaseURL;
   itemUrl: string = environment.backend.itemBaseURL;
-  weatherUrl: string = environment.backend.angApiURL + '/weatherforecast'
   jobUrl: string = environment.backend.angApiURL + '/api/HackerNews'
 
   public articleIds: ArticleId[] = [];
