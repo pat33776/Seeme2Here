@@ -1,0 +1,17 @@
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.csprojAssemblyReference.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.csproj.CoreCompileInputs.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.AssemblyInfoInputs.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.AssemblyInfo.cs
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\patApp\angular.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\patApp\tsconfig.app.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\patApp\tsconfig.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\patApp\tsconfig.spec.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\patApp\tslint.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\prett\github\Seeme2Here\Angular\bin\Debug\netcoreapp3.1\Angular.exe
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\Angular.RazorTargetAssemblyInfo.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\staticwebassets\Angular.StaticWebAssets.Manifest.cache
+C:\Users\prett\github\Seeme2Here\Angular\obj\Debug\netcoreapp3.1\staticwebassets\Angular.StaticWebAssets.xml

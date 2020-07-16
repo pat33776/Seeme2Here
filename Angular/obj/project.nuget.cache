@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DK4+8FWIh2ksq//94L7pHtZ0j+C/CnIXTznt6ZfZzzwAYyYiOJy/LCIH28vKIiaNBP83gTOHJnKSa0wz/KJ/tA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\prett\\github\\Seeme2Here\\Angular\\Angular.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\prett\\.nuget\\packages\\microsoft.typescript.msbuild\\3.9.6\\microsoft.typescript.msbuild.3.9.6.nupkg.sha512"
+  ],
+  "logs": []
+}
