@@ -33,13 +33,13 @@
           <li *ngFor="let article of _articlesLocal | filter: searchStr">
             <ng-template [ngIf]="article.url" [ngIfElse]="none">
               <div>
-                <a class="article-link" [href]=article.url target="_blank">{{ article.title }}</a> By {{ article.by | uppercase }} {{ article.time | replaceTime : article.time  }}
+                <a class="article-link" [href]=article.url target="_blank">{{ article.title }}</a> By {{ article.by | uppercase }} {{ article.time }}
               </div>
             </ng-template>
             <ng-template #none>
               <div>
                 {{ article.title }} By {{ article.by | uppercase }}
-                {{ article.time | replaceTime : article.time  }}
+                {{ article.time }}
                 <!--{{ article.time | date  }} gave me Jan 19, 1970 !!!-->
               </div>
             </ng-template>

@@ -24,17 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.9.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <TypeScriptCompile Include="patApp\src\app\_models\story.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_services\data.service.spec.ts" />
     <TypeScriptCompile Include="patApp\src\app\_services\data.service.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_helpers\auth.guard.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_helpers\basic-auth.interceptor.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_helpers\error.interceptor.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_helpers\fake-backend.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_helpers\replace-time.pipe.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_models\user.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_services\authentication.service.ts" />
-    <TypeScriptCompile Include="patApp\src\app\_services\user.service.ts" />
   </ItemGroup>
 
 </Project>
