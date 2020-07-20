@@ -42,12 +42,12 @@ export class CodingComponent implements OnInit {
 
     this._data.getBeer().subscribe(data => {
         this.brews = data;
-        console.log(this.brews);
+        //console.log(this.brews);
     });
 
     this._data.getJobs().subscribe(data => {
       this.jobs = data;
-      console.log(this.jobs);
+      //console.log(this.jobs);
     });
 
     const isExpired = this.isDateTimeExpired(EXPIRY_KEY)

@@ -148,12 +148,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, DataService);
 
         this._http = _http;
-        this.hackerNewsTopStorie = "https://hacker-news.firebaseio.com/v0/topstories.json";
-        this.hackerNewsGetStory = "https://hacker-news.firebaseio.com/v0/item/1.json";
         this.topStoryUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.topStoryBaseURL;
         this.itemUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.itemBaseURL;
-        this.jobUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.angApiURL + '/api/HackerNews';
-        this.articleIds = [];
+        this.beerUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.beerBaseUrl;
+        this.jobUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.baseUrl + '/api/HackerNews';
         this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
           'Content-Type': 'application/json'
         });
@@ -173,7 +171,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBeer",
         value: function getBeer() {
-          return this._http.get('https://api.openbrewerydb.org/breweries');
+          return this._http.get(this.beerUrl);
         }
       }, {
         key: "getJobs",
@@ -980,13 +978,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this = this;
 
           this._data.getBeer().subscribe(function (data) {
-            _this.brews = data;
-            console.log(_this.brews);
+            _this.brews = data; //console.log(this.brews);
           });
 
           this._data.getJobs().subscribe(function (data) {
-            _this.jobs = data;
-            console.log(_this.jobs);
+            _this.jobs = data; //console.log(this.jobs);
           });
 
           var isExpired = this.isDateTimeExpired(EXPIRY_KEY); //console.log(value);
@@ -1466,7 +1462,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       backend: {
         topStoryBaseURL: "https://hacker-news.firebaseio.com/v0/topstories",
         itemBaseURL: "https://hacker-news.firebaseio.com/v0/item",
-        angApiURL: "https://localhost:44300"
+        beerBaseUrl: "https://api.openbrewerydb.org/breweries",
+        baseUrl: "https://localhost:44300"
       }
     };
     /***/

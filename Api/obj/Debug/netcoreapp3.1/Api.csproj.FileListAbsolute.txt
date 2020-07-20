@@ -93,3 +93,4 @@ C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api
 C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.dll
 C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.pdb
 C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\prett\github\Seeme2Here\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache

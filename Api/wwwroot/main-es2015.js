@@ -82,12 +82,10 @@ __webpack_require__.r(__webpack_exports__);
 class DataService {
     constructor(_http) {
         this._http = _http;
-        this.hackerNewsTopStorie = "https://hacker-news.firebaseio.com/v0/topstories.json";
-        this.hackerNewsGetStory = "https://hacker-news.firebaseio.com/v0/item/1.json";
         this.topStoryUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.topStoryBaseURL;
         this.itemUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.itemBaseURL;
-        this.jobUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.angApiURL + '/api/HackerNews';
-        this.articleIds = [];
+        this.beerUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.beerBaseUrl;
+        this.jobUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].backend.baseUrl + '/api/HackerNews';
         this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Content-Type': 'application/json' });
     }
     getArticleIds() {
@@ -98,7 +96,7 @@ class DataService {
         return this._http.get(`${this.itemUrl}/` + id + '.json');
     }
     getBeer() {
-        return this._http.get('https://api.openbrewerydb.org/breweries');
+        return this._http.get(this.beerUrl);
     }
     getJobs() {
         return this._http.get(this.jobUrl, { headers: this.headers });
@@ -512,11 +510,11 @@ class CodingComponent {
     ngOnInit() {
         this._data.getBeer().subscribe(data => {
             this.brews = data;
-            console.log(this.brews);
+            //console.log(this.brews);
         });
         this._data.getJobs().subscribe(data => {
             this.jobs = data;
-            console.log(this.jobs);
+            //console.log(this.jobs);
         });
         const isExpired = this.isDateTimeExpired(EXPIRY_KEY);
         //console.log(value);
@@ -772,7 +770,8 @@ const environment = {
     backend: {
         topStoryBaseURL: "https://hacker-news.firebaseio.com/v0/topstories",
         itemBaseURL: "https://hacker-news.firebaseio.com/v0/item",
-        angApiURL: "https://localhost:44300"
+        beerBaseUrl: "https://api.openbrewerydb.org/breweries",
+        baseUrl: "https://localhost:44300"
     }
 };
 
