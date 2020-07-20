@@ -4,13 +4,11 @@ import {
   Input,
   Output,
   EventEmitter,
-  Injectable,
-  Inject,
+  Injectable
 } from '@angular/core';
 
 import { DataService } from '../_services/data.service';
 import { Story } from '../_models/story';
-import { HttpClient } from '@angular/common/http';
 
 const CACHE_KEY = 'hackerNewsTopStory';
 const EXPIRY_KEY = 'expiryDateTime';
@@ -26,11 +24,10 @@ export class CodingComponent implements OnInit {
 
   brews: Object;
   articlesIds: number[] = [];
-  articles: Article[] = [];
-  article: Article;
+  articles: Story[] = [];
+  article: Story;
   _articlesLocal = [];
   newsCount = 100;
-  public forecasts: WeatherForecast[];
   jobs: Story[] = [];
 
   clickCounter: number = 0;
@@ -78,7 +75,7 @@ export class CodingComponent implements OnInit {
       let item = this.articlesIds
         .slice(Math.max(this.articlesIds.length - this.newsCount, 0))
         .map(i => {
-          this._data.getArticleDetail(i).subscribe((res: Article) => {
+          this._data.getArticleDetail(i).subscribe((res: Story) => {
             this.article = res;
             this.articles.push(this.article);
             this._articlesLocal.push(this.article);
@@ -135,16 +132,9 @@ export class CodingComponent implements OnInit {
   }
 }
 
-interface Article {
-  id: string,
-  by: string,
-  title: string,
-  url: string
-}
-
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
+//interface Article {
+//  id: string,
+//  by: string,
+//  title: string,
+//  url: string
+//}

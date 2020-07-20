@@ -10,12 +10,14 @@ import { Story } from '../_models/story';
 })
 export class DataService {
 
-   hackerNewsTopStorie: string = "https://hacker-news.firebaseio.com/v0/topstories.json"
-   hackerNewsGetStory: string = "https://hacker-news.firebaseio.com/v0/item/1.json"
+   //hackerNewsTopStorie: string = "https://hacker-news.firebaseio.com/v0/topstories.json"
+   //hackerNewsGetStory: string = "https://hacker-news.firebaseio.com/v0/item/1.json"
  
   topStoryUrl: string = environment.backend.topStoryBaseURL;
   itemUrl: string = environment.backend.itemBaseURL;
-  jobUrl: string = environment.backend.angApiURL + '/api/HackerNews'
+  beerUrl: string = environment.backend.beerBaseUrl;
+  jobUrl: string = environment.backend.baseUrl + '/api/HackerNews';
+  
 
   public articleIds: ArticleId[] = [];
   public articleId: ArticleId
@@ -35,7 +37,7 @@ export class DataService {
   }
 
   getBeer() {
-    return this._http.get('https://api.openbrewerydb.org/breweries')
+    return this._http.get(this.beerUrl)
   }
 
   getJobs() {

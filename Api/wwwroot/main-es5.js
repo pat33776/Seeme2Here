@@ -45,25 +45,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcApp_helpersFilterPipeTs(module, __webpack_exports__, __webpack_require__) {
-
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-
     __webpack_require__.d(__webpack_exports__, "FilterPipe", function () {
       return FilterPipe;
-
     });
     /* harmony import */
 
 
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
-
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js"); //pipe decorator --> this allow us to give a pipe name
+
 
     var FilterPipe = /*#__PURE__*/function () {
       function FilterPipe() {
@@ -93,26 +90,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       name: "filter",
       type: FilterPipe,
       pure: true
-
     });
     /*@__PURE__*/
 
     (function () {
-
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FilterPipe, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
         args: [{
           name: 'filter'
         }]
       }], null, null);
-
     })();
     /***/
 
   },
 
   /***/
-
   "./src/app/_services/data.service.ts":
   /*!*******************************************!*\
     !*** ./src/app/_services/data.service.ts ***!
@@ -122,14 +115,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcApp_servicesDataServiceTs(module, __webpack_exports__, __webpack_require__) {
-
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
+
+
     __webpack_require__.d(__webpack_exports__, "DataService", function () {
       return DataService;
-
     });
     /* harmony import */
 
@@ -202,7 +195,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       token: DataService,
       factory: DataService.ɵfac,
       providedIn: 'root'
-
     });
     /*@__PURE__*/
 
@@ -215,7 +207,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }], function () {
         return [{
           type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
-
         }];
       }, null);
     })();
@@ -224,7 +215,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-
   "./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
@@ -234,16 +224,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
-
-  "./
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
+
     __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () {
       return AppRoutingModule;
-
     });
     /* harmony import */
 
@@ -252,6 +240,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /* harmony import */
+
 
     var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/router */
@@ -310,14 +299,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
         }]
       }], null, null);
-
     })();
     /***/
 
   },
 
   /***/
-
   "./src/app/app.component.ts":
   /*!**********************************!*\
     !*** ./src/app/app.component.ts ***!
@@ -327,15 +314,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcAppAppComponentTs(module, __webpack_exports__, __webpack_require__) {
-
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
+
     __webpack_require__.d(__webpack_exports__, "AppComponent", function () {
       return AppComponent;
-
     });
     /* harmony import */
 
@@ -344,6 +330,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /* harmony import */
+
 
     var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/router */
@@ -461,7 +448,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
       styles: ["@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap\");\nbody[_ngcontent-%COMP%] {\n  margin: 0;\n  font-family: \"Nunito\", sans-serif;\n  font-size: 18px;\n}\nnav[_ngcontent-%COMP%] {\n  background: #285 !important;\n}\nnav[_ngcontent-%COMP%]   .navbar-brand[_ngcontent-%COMP%] {\n  color: white !important;\n}\nnav[_ngcontent-%COMP%]   .custom-toggler.navbar-toggler[_ngcontent-%COMP%] {\n  border-color: #171a18;\n}\nnav[_ngcontent-%COMP%]   .custom-toggler[_ngcontent-%COMP%]   .navbar-toggler-icon[_ngcontent-%COMP%] {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(23, 26, 24, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n}\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: white !important;\n}\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%] {\n  background: #285 !important;\n}\nnav[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   .dropdown-menu[_ngcontent-%COMP%]   .dropdown-item[_ngcontent-%COMP%]:hover {\n  background: #1d7448 !important;\n}\nnav[_ngcontent-%COMP%]   .row[_ngcontent-%COMP%] {\n  margin-right: 15px !important;\n}\n.title[_ngcontent-%COMP%] {\n  font-size: x-large;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFVzZXJzXFxwcmV0dFxcZ2l0aHViXFxTZWVtZTJIZXJlXFxBbmd1bGFyXFxwYXRBcHAvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLGtGQUFBO0FBS1I7RUFDSSxTQUFBO0VBQ0EsaUNBQUE7RUFDQSxlQUFBO0FDSEo7QURLQTtFQUNFLDJCQUFBO0FDRkY7QURJRTtFQUNFLHVCQUFBO0FDRko7QURLRTtFQUNFLHFCQUFBO0FDSEo7QURNRTtFQUNFLHdRQUFBO0FDSko7QURRSTtFQUNFLHVCQUFBO0FDTk47QURTSTtFQUNFLDJCQUFBO0FDUE47QURTTTtFQUNFLDhCQUFBO0FDUFI7QURZRTtFQUNFLDZCQUFBO0FDVko7QURlQTtFQUNFLGtCQUFBO0FDWkYiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PU51bml0bzo0MDAsNzAwJmRpc3BsYXk9c3dhcCcpO1xyXG5cclxuJG5hdmJhcmNvbG9yOiAjMjg1O1xyXG4kdGV4dG5hdmJhcmNvbG9yOiB3aGl0ZTtcclxuXHJcbmJvZHkge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgZm9udC1mYW1pbHk6J051bml0bycsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbn1cclxubmF2IHtcclxuICBiYWNrZ3JvdW5kOiAkbmF2YmFyY29sb3IgIWltcG9ydGFudDtcclxuXHJcbiAgLm5hdmJhci1icmFuZCB7XHJcbiAgICBjb2xvcjogJHRleHRuYXZiYXJjb2xvciAhaW1wb3J0YW50O1xyXG4gIH1cclxuXHJcbiAgLmN1c3RvbS10b2dnbGVyLm5hdmJhci10b2dnbGVyIHtcclxuICAgIGJvcmRlci1jb2xvcjogcmdiKDIzLCAyNiwgMjQpO1xyXG4gIH1cclxuXHJcbiAgLmN1c3RvbS10b2dnbGVyIC5uYXZiYXItdG9nZ2xlci1pY29uIHtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybChcImRhdGE6aW1hZ2Uvc3ZnK3htbDtjaGFyc2V0PXV0ZjgsJTNDc3ZnIHZpZXdCb3g9JzAgMCAzMiAzMicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyUzRSUzQ3BhdGggc3Ryb2tlPSdyZ2JhKDIzLCAyNiwgMjQsIDAuNSknIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIGQ9J000IDhoMjRNNCAxNmgyNE00IDI0aDI0Jy8lM0UlM0Mvc3ZnJTNFXCIpO1xyXG4gIH1cclxuXHJcbiAgdWwge1xyXG4gICAgbGkgYSB7XHJcbiAgICAgIGNvbG9yOiAkdGV4dG5hdmJhcmNvbG9yICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcblxyXG4gICAgLmRyb3Bkb3duLW1lbnUge1xyXG4gICAgICBiYWNrZ3JvdW5kOiAkbmF2YmFyY29sb3IgIWltcG9ydGFudDtcclxuXHJcbiAgICAgIC5kcm9wZG93bi1pdGVtOmhvdmVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kOiBkYXJrZW4oJG5hdmJhcmNvbG9yLCA1JSkgIWltcG9ydGFudDtcclxuICAgICAgfVxyXG4gICAgfVxyXG4gIH1cclxuXHJcbiAgLnJvdyB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHggIWltcG9ydGFudDtcclxuICB9XHJcbn1cclxuXHJcblxyXG4udGl0bGUge1xyXG4gIGZvbnQtc2l6ZTogeC1sYXJnZTtcclxufVxyXG5cclxuXHJcbiIsIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PU51bml0bzo0MDAsNzAwJmRpc3BsYXk9c3dhcFwiKTtcbmJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiBcIk51bml0b1wiLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDE4cHg7XG59XG5cbm5hdiB7XG4gIGJhY2tncm91bmQ6ICMyODUgIWltcG9ydGFudDtcbn1cbm5hdiAubmF2YmFyLWJyYW5kIHtcbiAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XG59XG5uYXYgLmN1c3RvbS10b2dnbGVyLm5hdmJhci10b2dnbGVyIHtcbiAgYm9yZGVyLWNvbG9yOiAjMTcxYTE4O1xufVxubmF2IC5jdXN0b20tdG9nZ2xlciAubmF2YmFyLXRvZ2dsZXItaWNvbiB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcImRhdGE6aW1hZ2Uvc3ZnK3htbDtjaGFyc2V0PXV0ZjgsJTNDc3ZnIHZpZXdCb3g9JzAgMCAzMiAzMicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyUzRSUzQ3BhdGggc3Ryb2tlPSdyZ2JhKDIzLCAyNiwgMjQsIDAuNSknIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIGQ9J000IDhoMjRNNCAxNmgyNE00IDI0aDI0Jy8lM0UlM0Mvc3ZnJTNFXCIpO1xufVxubmF2IHVsIGxpIGEge1xuICBjb2xvcjogd2hpdGUgIWltcG9ydGFudDtcbn1cbm5hdiB1bCAuZHJvcGRvd24tbWVudSB7XG4gIGJhY2tncm91bmQ6ICMyODUgIWltcG9ydGFudDtcbn1cbm5hdiB1bCAuZHJvcGRvd24tbWVudSAuZHJvcGRvd24taXRlbTpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICMxZDc0NDggIWltcG9ydGFudDtcbn1cbm5hdiAucm93IHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4ICFpbXBvcnRhbnQ7XG59XG5cbi50aXRsZSB7XG4gIGZvbnQtc2l6ZTogeC1sYXJnZTtcbn0iXX0= */"]
-
     });
     /*@__PURE__*/
 
@@ -478,7 +464,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]
         }];
       }, null);
-
     })();
     /***/
 
@@ -494,17 +479,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcAppAppModuleTs(module, __webpack_exports__, __webpack_require__) {
-
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
+
     __webpack_require__.d(__webpack_exports__, "AppModule", function () {
       return AppModule;
-
     });
     /* harmony import */
+
 
     var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/platform-browser */
@@ -513,10 +498,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /* harmony import */
+
 
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common/http */
@@ -602,14 +587,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         }]
       }], null, null);
-
     })();
     /***/
 
   },
 
   /***/
-
   "./src/app/coding/coding.component.ts":
   /*!********************************************!*\
     !*** ./src/app/coding/coding.component.ts ***!
@@ -619,15 +602,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   function srcAppCodingCodingComponentTs(module, __webpack_exports__, __webpack_require__) {
-
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
+
     __webpack_require__.d(__webpack_exports__, "CodingComponent", function () {
       return CodingComponent;
-
     });
     /* harmony import */
 
@@ -636,6 +618,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /* harmony import */
+
 
     var _services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! ../_services/data.service */
@@ -917,7 +900,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, CodingComponent_table_49_tr_8_ng_template_2_Template, 4, 2, "ng-template", null, 23, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
 
-
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
 
@@ -998,7 +980,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this = this;
 
           this._data.getBeer().subscribe(function (data) {
-            _this.brews = data; //console.log(this.brews);
+            _this.brews = data;
+            console.log(_this.brews);
           });
 
           this._data.getJobs().subscribe(function (data) {
@@ -1140,7 +1123,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Breweries");
-
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1440,12 +1422,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       styles: ["span[_ngcontent-%COMP%] {\n  font-weight: bold;\n  background: lightgray;\n  padding: 0.3em 0.8em;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.play-container[_ngcontent-%COMP%] {\n  padding: 3em;\n  border: 1px solid lightgray;\n  margin-bottom: 1em;\n}\n\n.play-container[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  padding: 1em;\n  margin-bottom: 2em;\n}\n\n.active[_ngcontent-%COMP%] {\n  background-color: yellow;\n  border: 4px solid black;\n}\n\n.notActive[_ngcontent-%COMP%] {\n  background-color: lightgray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXHByZXR0XFxnaXRodWJcXFNlZW1lMkhlcmVcXEFuZ3VsYXJcXHBhdEFwcC9zcmNcXGFwcFxcaG9tZVxcaG9tZS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksaUJBQUE7RUFDQSxxQkFBQTtFQUNBLG9CQUFBO0VBQ0EsZUFBQTtFQUNBLHlCQUFBO0tBQUEsc0JBQUE7TUFBQSxxQkFBQTtVQUFBLGlCQUFBO0FDQ0o7O0FERUE7RUFDSSxZQUFBO0VBQ0EsMkJBQUE7RUFDQSxrQkFBQTtBQ0NKOztBRENJO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0FDQ1I7O0FER0E7RUFDRSx3QkFBQTtFQUNBLHVCQUFBO0FDQUY7O0FER0E7RUFDSSwyQkFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsic3BhbiB7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGJhY2tncm91bmQ6IGxpZ2h0Z3JheTtcclxuICAgIHBhZGRpbmc6IC4zZW0gLjhlbTtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIHVzZXItc2VsZWN0OiBub25lO1xyXG59XHJcblxyXG4ucGxheS1jb250YWluZXIge1xyXG4gICAgcGFkZGluZzogM2VtO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmF5O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xyXG5cclxuICAgIGlucHV0IHtcclxuICAgICAgICBwYWRkaW5nOiAxZW07XHJcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMmVtO1xyXG4gICAgfVxyXG59XHJcblxyXG4uYWN0aXZlIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XHJcbiAgYm9yZGVyOiA0cHggc29saWQgYmxhY2s7XHJcbn1cclxuXHJcbi5ub3RBY3RpdmUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmF5O1xyXG59XHJcbiIsInNwYW4ge1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgYmFja2dyb3VuZDogbGlnaHRncmF5O1xuICBwYWRkaW5nOiAwLjNlbSAwLjhlbTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbn1cblxuLnBsYXktY29udGFpbmVyIHtcbiAgcGFkZGluZzogM2VtO1xuICBib3JkZXI6IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cbi5wbGF5LWNvbnRhaW5lciBpbnB1dCB7XG4gIHBhZGRpbmc6IDFlbTtcbiAgbWFyZ2luLWJvdHRvbTogMmVtO1xufVxuXG4uYWN0aXZlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xuICBib3JkZXI6IDRweCBzb2xpZCBibGFjaztcbn1cblxuLm5vdEFjdGl2ZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbn0iXX0= */"]
-
     });
     /*@__PURE__*/
 
     (function () {
-
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -1455,7 +1435,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [];
-
       }, null);
     })();
     /***/
@@ -1480,9 +1459,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     __webpack_require__.d(__webpack_exports__, "environment", function () {
       return environment;
-
     });
-
 
     var environment = {
       production: false,
@@ -1492,7 +1469,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         angApiURL: "https://localhost:44300"
       }
     };
-
     /***/
   },
 
@@ -1572,9 +1548,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-      
     /*! C:\Users\prett\github\Seeme2Here\Angular\patApp\src\main.ts */
-
     "./src/main.ts");
     /***/
   }

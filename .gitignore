@@ -3,3 +3,5 @@
 ################################################################################
 
 /Api/.config/dotnet-tools.json
+/Api
+/Angular/obj/Release/netcoreapp3.1
